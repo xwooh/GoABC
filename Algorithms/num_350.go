@@ -59,3 +59,27 @@ func main() {
 	// [1, 2, 2]
 	fmt.Println(intersect([]int{1, 2, 2, 2}, []int{1, 1, 2, 2}))
 }
+
+/*
+
+知识点：
+1. map、array、slice 的构造和简单使用
+2. 迭代数组
+3. 判断某个元素是否在 map 中
+4. 往 slice 中添加元素
+---
+
+构造 map 和 slice 都可以借助 `make`:
+```
+// 构造一个 key 和 value 都是 int 的 map
+var m = make(map[int]int)
+
+// 构造一个指定 capacity 为 3, 存储 int 的 slice
+sl := make([]int, 3)
+// 构造一个没有 capacity, 存储 int 的 slice
+var sl []int
+// 或者直接这么构造没有 capacity, 存储 int 的 slice
+sl := []int{}
+```
+
+*/
