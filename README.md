@@ -2,6 +2,8 @@ Record something when learning golang ~
 
 ## 参考文档
 [Tony Bai · Go 语言第一课](https://time.geekbang.org/column/intro/100093501)
+[极客兔兔](https://github.com/geektutu/high-performance-go)
+[架构小白](https://blog.frognew.com/)
 
 ## 目录
 
