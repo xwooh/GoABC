@@ -67,6 +67,6 @@ func rotate(nums []int, k int) {
 	}
 }
 
-func main() {
-	rotate([]int{-1, 100, 3, 99}, 5)
-}
+//func main() {
+//	rotate([]int{-1, 100, 3, 99}, 5)
+//}

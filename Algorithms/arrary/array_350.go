@@ -1,7 +1,5 @@
 package arrary
 
-import "fmt"
-
 /*
 
 给你两个整数数组 nums1 和 nums2，请你以数组形式返回两数组的交集。
@@ -55,10 +53,10 @@ func intersect(nums1 []int, nums2 []int) []int {
 	return result
 }
 
-func main() {
-	// [1, 2, 2]
-	fmt.Println(intersect([]int{1, 2, 2, 2}, []int{1, 1, 2, 2}))
-}
+//func main() {
+//	// [1, 2, 2]
+//	fmt.Println(intersect([]int{1, 2, 2, 2}, []int{1, 1, 2, 2}))
+//}
 
 /*
 
