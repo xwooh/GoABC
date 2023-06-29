@@ -8,14 +8,14 @@ func PreOrder(n *TreeNode, container []int) []int {
 		return container
 	}
 
-	// 前序
+	// 根
 	container = append(container, n.Val)
 	fmt.Printf("visit %d\n", n.Val)
 
-	// 中序
+	// 左
 	container = PreOrder(n.Left, container)
 
-	// 后序
+	// 右
 	container = PreOrder(n.Right, container)
 
 	return container
