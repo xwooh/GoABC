@@ -21,6 +21,25 @@ func PreOrder(n *TreeNode, container []int) []int {
 	return container
 }
 
+func PreTraverse(n *TreeNode) []int {
+	var res []int
+
+	if n == nil {
+		return res
+	}
+
+	// 根
+	res = append(res, n.Val)
+
+	// 左
+	res = append(res, PreTraverse(n.Left)...)
+
+	// 右
+	res = append(res, PreTraverse(n.Right)...)
+
+	return res
+}
+
 func InOrder(n *TreeNode, container []int) []int {
 	// 左(l) -> 根(R) -> 右(r)
 	if n != nil {

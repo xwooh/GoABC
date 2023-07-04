@@ -48,7 +48,14 @@ func TestTreePreOrder(t *testing.T) {
 	c = PreOrder(r1, c)
 	if !reflect.DeepEqual([]int{1, 2, 3, 4, 5, 6, 7}, c) {
 		t.Errorf("前序遍历错误: %v", c)
-		t.Log("================>>>>>>>>>>>>>>")
+	}
+}
+
+func TestTreePreTraverse(t *testing.T) {
+	var c []int
+	c = PreTraverse(r1)
+	if !reflect.DeepEqual([]int{1, 2, 3, 4, 5, 6, 7}, c) {
+		t.Errorf("前序遍历错误: %v", c)
 	}
 }
 
